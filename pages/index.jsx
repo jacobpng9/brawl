@@ -5,7 +5,7 @@ import Card from "./card.jsx";
 export default function Home() {
  const fetchData = async () => {
    try {
-     const response = await fetch("https://bored-api.appbrewery.com/random");
+     const response = await fetch("http://bored.api.lewagon.com/api/activity/");
      if (!response.ok) {
        throw new Error("Failed to fetch data");
      }
